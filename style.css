@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: 700;
+    background-color: black;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(https://raw.githubusercontent.com/ZloyDeDD/Barbershop/master/img/bg.jpg);
+   }
+
+.section{
+    margin: 10px 0 0 10px;
+    padding: 0 10px 10px 0;
+}
+
+
+.rmodal.hide .modal-overlay,
+.rmodal.hide .modal-window {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.rmodal.hide .modal-overlay {
+    background: rgba(0,0,0,0);
+}
+
+.rmodal.hide .modal-window {
+    transform: translateY(-200px);
+}
+
+.rmodal.open .modal-overlay{
+    opacity: 1;
+    z-index: 1000;
+}
+
+.rmodal.open .modal-window {
+    opacity: 1;
+    z-index: 1500;
+}
+
+.rmodal.open .modal-overlay {
+    background: rgba(0,0,0,0.8);
+}
+
+.rmodal.open .modal-window {
+    transform: translateY(100px);
+}
+
+
+.modal-window, .modal-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    transition: background 1s ease-in;
+}
+
+.modal-window {
+    border-radius: 5px;
+    background-color: white;
+    margin:0 auto;
+    transform: translateY(-200px);
+    transition: transform 1s ease-in;
+
+}
+
+.modal-header {
+    padding:5px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgoldenrod;
+}
+
+.modal-body p{
+    margin: 0 0 2px;
+}
+
+
+.modal-title {
+    font-size: 1.5rem;
+}
+
+.but {
+    cursor: pointer;
+}
+
+.modal-body {
+    padding:10px;
+}
+
+.modal-footer {
+    padding: 5px 10px;
+    border-top:1px solid darkgoldenrod;
+}
+
+.container {
+    max-width: 1170px;
+    height: 1500px;
+    margin: auto;
+}
+
+.Zap button {
+    margin: 0;
+    padding: 0;
+    border: groove;
+    border-color: lightcoral;
+    border-radius: 100px;
+    background-color: transparent;
+    animation: ring 2s infinite;
+    outline: none;
+}
+
+.Zap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg)
+
+    }
+    100% {
+        transform: rotate(360deg)
+
+    }
+}
+
+.main-navigation {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.site-navigation {
+    height:100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+li a {
+    text-transform: uppercase   ;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header-logo {
+    padding: 20px;
+    border-radius: 400px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+    padding: 2px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.advantages {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.advantages-item {
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    float:left;
+    height: 100%;
+}
+
+li a:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+input.del {
+    position: absolute;
+    right: 5px;
+}
+
+.head {
+    position: relative;
+}
+
+.card-content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.map {
+    margin: 0 auto;
+    width: 993px;
+    height: 588px
+}
+
+.img {
+    vertical-align: middle;
+    border-style: none;
+    width: 40px;
+    margin: 10px;
+}
+
+.Soc {
+    display: inline-block;
+}
+.Soc:hover {
+    text-decoration:none;
+}
+
+.slide{
+    width: 810px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-items{
+    white-space: nowrap;
+    position:relative;
+}
+
+.slide-item{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: darkred;
+    border-radius: 10px;
+}
+
+.slide-item.one{
+    background: url("./img/1.jpg") no-repeat;
+    background-size: 400px;
+    background-position: center center;
+}
+
+.slide-item.two{
+    background: url("./img/2.jpg") no-repeat;
+    background-size: 400px;
+    background-position: center center;
+}
+
+.slide-item.three{
+    background: url("./img/3.jpg") no-repeat;
+    background-size: 400px;
+    background-position: center center;
+}
+
+.slide-item.four{
+    background: url("./img/4.jpg") no-repeat;
+    background-size: 400px;
+    background-position: center center;
+}
+
+.slide-item.five{
+    background: url("./img/5.jpg") no-repeat;
+    background-size: 400px;
+    background-position: center center;
+}
+
+
+.buttonBack {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:10px;
+    cursor: pointer;
+
+}
+
+.buttonBack::after {
+    content: '‹';
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
+.buttonNext {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:10px;
+    cursor: pointer;
+}
+
+.buttonNext::after {
+    color: white;
+    content: '›';
+    font-size: 50px;
+    display: block;
+}
+
+.zSlide {
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding:5px;
+}
+
+.contact {
+    border-radius: 10px;
+    position:absolute;
+    color: firebrick;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
